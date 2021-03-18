@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Teste Audio-Video</title>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" >
+		<style type="text/css">
+			
+		/* Centralizar o Vídeo */
+		#corpo video{
+					  width: 750px;
+					  margin:0 auto;
+					  display: block;
+					}
+		</style>
+
+		<!-- Script em JS para setar o Audio para 10% -->
+		<script type="text/javascript">
+			function baixar(vol) {
+				var audio = document.getElementById(vol);
+		 		audio.volume = 0.1;
+		}
+
+		</script>
+	</head>
+
+	<body >
+
+		<audio id="a1" autoplay="autoplay" controls="controls" loop="true">
+			<source src="midia/dbz.mp3" type="audio/mp3">
+		</audio> <br>
+
+		<!-- Chama a função baixar -->
+		<script type="text/javascript">baixar("a1")</script>
+
+		
+		<!-- atributo onclick executa alguma coisa, um código em js se clicar por exemplo -->
+
+		<!-- O método getElementById () retorna o elemento que possui o atributo ID com o valor especificado. -->
+
+		<button onclick="document.getElementById('player').play()">Play</button>
+		<button onclick="document.getElementById('player').pause()">Pause</button>
+		<button onclick="document.getElementById('player').volume+=0.1">Aumentar volume</button>
+		<button onclick="document.getElementById('player').volume-=0.1">Diminuir volume</button> <br><br><br><hr>
+
+
+		<div id="corpo">
+			<video id="v1" autoplay="autoplay" controls="controls" loop="true">
+				<source src="midia/dbz.mp4" type="video/mp4">
+			</video>
+			<script type="text/javascript">baixar("v1")</script>
+		</div>
+
+	</body>
+</html>
