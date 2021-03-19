@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Elementos Flutuantes</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			
+			.conteudo{
+				background: blue;
+				border: 1px solid gray;
+				width: 200px;
+				height:200px; 
+				float: left;
+			}
+
+			.conteudo1{
+				background: red;
+				border: 1px solid gray;
+				width: 150px;
+				height: 150px; 
+				/* Conteudos flutuam para: ; left, right , none*/
+				float: left;
+			}
+
+			.conteudo0{
+				background: red;
+				border: 1px solid gray;
+				width: 150px;
+				height: 150px; 
+				/* Conteudos flutuam para: ; left, right , none*/
+			}
+
+			.clear{
+				/* Serve para limpar os pontos flutuantes e deixar o texto em baixo right, lef, both */
+				clear: both;
+			}
+
+			#principal{
+				border: 1px solid red;
+				background: green;
+			}
+
+		</style>
+	</head>
+
+
+	<body>
+
+		<div id="principal">
+			<div class="conteudo">
+				Conteudo 0
+			</div >
+
+			<div class="conteudo">
+				Conteudo 1
+			</div >
+
+			<div class="conteudo">
+				Conteudo 2
+			</div>
+
+			<div class="conteudo">
+				Conteudo 3
+			</div>
+
+			<!-- Faço a limpeza dos pontos flutuantes -->
+			<div class="clear"></div>
+			<div>
+				<p>
+					Em linguística, a noção de texto é ampla e ainda aberta a uma definição mais precisa. Grosso modo, pode ser entendido como manifestação linguística das ideias de um autor, que serão interpretadas pelo leitor de acordo com seus conhecimentos linguísticos e culturais. Seu tamanho é variável.
+				</p>
+			</div>
+		</div>
+	</body>
+	
+</html>

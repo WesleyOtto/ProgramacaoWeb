@@ -1,0 +1,60 @@
+<!-- https://www.w3schools.com/css/css_background.asp -->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Cores e Imagens</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+
+			.fundo{
+
+				background-color: blue;
+				color: white;
+			}
+
+			.fundo2{
+
+				background-color: blue;
+				/* Se a imagem não tiver o tamanho necessário para preencher toda a tela
+					ela irá se repetir na horiozontal e na vertical para preencher toda a tela 
+				*/
+				background-image: url('imagens/yoshi.png');
+
+				/* Controla quantas vezes a imagem vai se repetir : no-reapet, repeat (defaul);
+				   repeat-x, repeat-y
+				*/
+				background-repeat: no-repeat;
+
+				/* Controla se a imagem vai ficar fixa (fixed), estática (scroll) */
+				background-attachment:fixed; 
+
+				/* define uma posição da minha imagem 
+				   Primeiro valor : left, center, right;
+				   Segundo valor  : top  , center, bottom;
+				   
+				 */
+
+				background-position: center bottom; 
+
+			}
+
+			.fundo3{
+
+				background: blue url('imagens/yoshi.png') no-repeat  fixed center bottom;
+			}
+			
+		</style>
+	</head>
+
+	<body class="fundo3">
+
+		<h1>Conteudo do título</h1>
+
+		<p>
+			A Prefeitura de São Paulo anunciou nesta quinta-feira (18) a antecipação de cinco 	feriados municipais e uma mudança no horário do rodízio para tentar aumentar o isolamento social e conter o avanço de casos de Covid-19 na cidade. O funcionamento do rodízio, que passará a ser das 20h às 5h, entra em vigor na segunda-feira (22).
+		</p>
+	</body>
+	
+</html>
