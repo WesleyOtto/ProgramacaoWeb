@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Posicionamentos (static, relative, absolute e fixed)</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			
+			body{
+				background: #007fc7;
+			}
+
+			h1{
+			}				
+
+			p{
+				width: 300px;
+				height: 125px;
+				margin: 0px;
+				border: 1px solid red;
+			}
+
+			.relative{
+				position: relative;
+				/* top, right, bottom , left */
+				bottom: 127px; /* 2px a mais por causa da borda*/
+				left: 310px;
+			}
+
+			.relative2{
+				position: relative;
+				bottom: 127px;
+				margin-top: 10px;
+			}
+
+			#container{
+				background: #FFF;
+				width: 800px;
+				margin: 10px auto; 
+				padding: 10px;
+			}
+		</style> 
+	</head>
+
+	<body>
+
+		<div id="container">
+			<h1>Posicionamentos</h1>		
+
+			<p> p1
+				A população ela precisa da Zona Franca de Manaus, porque na Zona franca de Manaus, não é uma zona de exportação, é uma zona para o Brasil. Portanto ela tem um objetivo, ela evita o desmatamento, que é altamente lucravito. Derrubar arvores da natureza é muito lucrativo!
+			</p>
+
+			<p class="relative"> p2
+				A população ela precisa da Zona Franca de Manaus, porque na Zona franca de Manaus, não é uma zona de exportação, é uma zona para o Brasil. Portanto ela tem um objetivo, ela evita o desmatamento, que é altamente lucravito. Derrubar arvores da natureza é muito lucrativo!
+			</p>
+
+			<p class="relative2"> p3
+				A população ela precisa da Zona Franca de Manaus, porque na Zona franca de Manaus, não é uma zona de exportação, é uma zona para o Brasil. Portanto ela tem um objetivo, ela evita o desmatamento, que é altamente lucravito. Derrubar arvores da natureza é muito lucrativo!
+			</p>
+
+			<p> p4
+				A população ela precisa da Zona Franca de Manaus, porque na Zona franca de Manaus, não é uma zona de exportação, é uma zona para o Brasil. Portanto ela tem um objetivo, ela evita o desmatamento, que é altamente lucravito. Derrubar arvores da natureza é muito lucrativo!
+			</p>
+
+		</div>
+
+	</body>
+	
+</html>
