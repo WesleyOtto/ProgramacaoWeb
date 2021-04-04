@@ -1,0 +1,17 @@
+/*Formatacao de tabelas*/
+
+table{
+    width: 500px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+table th{
+    background-color:#1867a9;
+    color: white;
+}
+
+table td{
+    background-color: white;
+}
+

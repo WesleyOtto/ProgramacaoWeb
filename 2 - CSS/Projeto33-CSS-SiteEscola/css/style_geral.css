@@ -1,0 +1,118 @@
+/* Zerando margem e espacamento */ 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Definicoes Gerais */
+body{
+  
+    font-family: "Arial", "sans-serif"; 
+    background-color: #dedee9;
+    
+}
+
+main{
+    width: 920px;
+    margin: 0 auto;
+}
+
+nav{
+     height: 10px;
+}
+
+header{
+    background: #1867a9;
+    padding: 10px;
+    text-align: center;
+    height: 150px;
+}
+
+footer{
+    background-color:#c0c0c0 ;
+    text-align: center;
+    padding: 10px;
+}
+
+a{
+    color: honeydew;
+}
+
+p{
+    text-indent: 50px;
+    padding: 5px;
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+    color: #1867a9;
+    border-bottom: 1px solid rgb(247, 222, 222);
+}
+
+h1{
+    color: #1867a9;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid rgb(247, 222, 222);
+}
+
+/*Formatacao Links*/
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color: #1867a9;
+}
+
+a:hover{
+   text-decoration: underline;
+}
+
+nav a{
+    font-size: 1.25em;
+}
+
+nav a:link, nav a:visited{
+    color: #fff;
+    padding: 9px 12px;
+}
+
+nav a:hover{
+    color: #1867a9;
+    background: white;
+    text-decoration: none;
+    border-radius: 10px 20px ;
+}
+
+
+/*Formatacao Geral*/
+.section_conteudo{
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    text-align: justify;    
+    line-height: 1.5;
+}
+
+#navegacao{
+    padding: 20px;
+   
+}
+.negrito{
+    font-weight: bolder;
+}
+
+.italico{
+    font-style: italic;
+}
+
+/*Utilizo FlexBox para centralizar*/
+
+.centralizar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
