@@ -70,22 +70,21 @@ a:hover{
    text-decoration: underline;
 }
 
-nav a{
+nav>span>a{
     font-size: 1.25em;
-}
-
-nav a:link, nav a:visited{
-    color: #fff;
     padding: 9px 12px;
 }
 
-nav a:hover{
-    color: #1867a9;
-    background: white;
+
+nav>span>a:link, nav>span>a:visited{
+    color: white;
+}
+
+nav>span>a:hover, .selecionado a{
+     background: #39f;
     text-decoration: none;
     border-radius: 10px 20px ;
 }
-
 
 /*Formatacao Geral*/
 .section_conteudo{
@@ -98,7 +97,6 @@ nav a:hover{
 
 #navegacao{
     padding: 20px;
-   
 }
 .negrito{
     font-weight: bolder;

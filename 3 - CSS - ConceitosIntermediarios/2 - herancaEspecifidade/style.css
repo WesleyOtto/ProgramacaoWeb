@@ -1,0 +1,49 @@
+/*****************
+Herança
+Tudo o que está dentro do body vai ser aplicado nos outros containers
+*/ 
+
+/*
+body{
+    color: red;
+    /* Por padrão Border e background não sao herdados
+    border: 1px solid blue;
+    background: gray;
+
+}
+*/
+/*****************
+Especifidade, se tiver 2 sempre o último que é executado
+
+--> podemos usar !important para definir que ele vai ser aplicado
+
+
+p{
+    color: blue imp !important;
+}
+
+
+p{  
+    color: red;
+}
+*/ 
+
+/*
+    Se um seletor for mais especifico que o outro a regra mais espefica sera aplicada (terá precedência sobre regras mais gerais)
+*/
+
+*{
+    color: red;
+}
+
+h2 {  /*3 aplicado*/
+    color: blue;
+}
+
+h2.verde {   /*2 aplicado*/
+    color: green;
+}
+
+h2#amarelo{  /*1 aplicado*/
+    color: yellow;
+}

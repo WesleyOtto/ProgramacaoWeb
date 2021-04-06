@@ -1,0 +1,60 @@
+/* Seletor Universal 
+*{
+    border: 1px solid blue;
+}
+
+/*******************************************
+Seletor de Texto
+
+h1{
+    color: green;
+}
+
+/*******************************************
+
+Seletor de Classe 
+
+.verde{
+    color: green;
+}
+
+Posso Declarar como classe verde, contudo só terei essa formatacao no paragrafo
+
+p.verde{
+    color: green;
+}
+/*******************************************
+Seletor de ID 
+
+#cabecalho{
+    border: 1px solid blue;
+}
+
+/*******************************************
+Seletor de Filho 
+li>a{
+    color: red;
+    text-decoration: none;
+}
+
+/*******************************************
+Descendente 
+
+li a{
+    color: red;
+    text-decoration: none;
+}
+
+/*******************************************
+Seletor de irmão adjacente 
+
+h1+p{
+    color: purple;
+}
+
+/*******************************************
+Seletor de irmão geral */
+
+h1~p{
+    color: saddlebrown;
+}
