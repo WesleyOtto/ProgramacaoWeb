@@ -1,0 +1,63 @@
+nav{
+    width: 200px;
+    float: left;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    background: #d55;
+    color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px;
+}
+
+article{
+    margin-left: 210px;
+}
+
+/*  (max-device-width:450px) and (orientation:portrait)
+     utilizar fontes liquidas %
+     display:none  --> some 
+*/
+
+/* Celular */
+@media screen and (min-width:0px) and (max-width:500px){
+    nav{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    article{
+        margin-left: 4px;
+    }
+
+    article p{
+        text-align: justify;
+    }
+
+    nav li{
+        font-size: 20px;
+        text-align: center;
+        
+    }
+}
+
+/* Tablet */
+@media screen and (min-width:501px) and (max-width:800px){
+    nav{
+        margin-bottom: 20px;
+    }
+
+
+    article div{
+        float: left;
+        margin-left: 20px;
+    }
+    
+}

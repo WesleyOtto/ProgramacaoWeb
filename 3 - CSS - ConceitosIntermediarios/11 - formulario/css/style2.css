@@ -1,6 +1,7 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: #643d87 url(../imagens/fundo.jpg) no-repeat top center;
+    background-size: cover;
 }
 
 #container{

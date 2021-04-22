@@ -1,0 +1,111 @@
+/* Definições gerais */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Definição do meu Header */
+
+header{
+     background:url(../imagens/logo.png);
+     height:100px;
+     margin-bottom: 20px;
+}
+
+h1{
+    text-align: center;
+    text-indent: -3000px;
+}
+
+/* Definição Container */
+
+#container{
+    margin: 0 auto;
+    width: 800px;
+    background: #dedee9;
+    /* border: 1px solid red; */
+}
+
+/* Definição Conteúdo/Formulário */
+
+fieldset{
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+}
+
+legend{
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+textarea{
+    width: 400px;
+    height:100px;
+    font-size: 16px;
+}
+
+.campo label{
+    display: block;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.campo-checkbox{
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.campo input[type="text"], .campo input[type="email"]{
+    width: 500px;
+    height: 20px;
+    font-size: 16px;
+}
+.campo select{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.botao{
+    margin-left:350px;
+    margin-bottom: 50px;
+    font-size: 1.4em;
+    background: yellow;
+    color: #000000;
+    border-radius: 10px 5px;
+}
+
+#formulario{
+    background: #d7dadc;
+    background: -moz-linear-gradient(to right,  #d7dadc 0%,#edf3f3 100%);
+    background: -webkit-linear-gradient(to right,  #d7dadc 0%,#edf3f3 100%); 
+    background: linear-gradient(to right,  #d7dadc 0%,#edf3f3 100%);
+}
+
+/* Definições de ações Formulário */
+.botao:hover{
+    background: #000000;
+    color: #ffffff;
+}
+
+.campo input:focus, .campo select:focus, textarea:focus{
+    background: #d7dadc;
+}
+
+
+/* Deinição rodapé */
+
+footer{
+    background:url(../imagens/rodape.png);
+    height: 100px;
+}

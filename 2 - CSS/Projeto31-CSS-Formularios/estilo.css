@@ -3,33 +3,33 @@
     padding: 0;
   
 }
+body{
+    background-color: #F0F8FF;
+    font-family: sans-serif;
+    font-size: 1em;
+    margin: 0 auto;
+    width:50%;
+    height:50%;
+}
 
 #titulo{
     font-family: sans-serif;
     color: #380861;
-    
+    text-align: center;
 }
 
 #subtitulo {
     font-family: sans-serif;
+    margin-bottom: 20px;
     color: #380B61;
-    margin-left: 10%;
+    text-align: center;
 } 
 
 fieldset{
     border:0;
 }
 
-body{
-    background-color: #F0F8FF;
-    font-family: sans-serif;
-    font-size: 1em;
-    margin: 0 auto;
-    /*Faz o Alinhamento dos itens no container*/
-    justify-content: center;
-    width:50%;
-    height:50%;
-   }
+
 
 input, select, textarea, button{
     border-radius: 5px;

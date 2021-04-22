@@ -1,0 +1,104 @@
+/* Configurações gerais */
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dedee9;
+    font-size: 18px;
+}
+
+
+/*Cabeçalho*/
+
+#topo{
+    background:#000000 url(../imagens/header-fundo.png) no-repeat center top;
+    border-bottom: 1px solid white;
+}
+
+ul#menu-navegacao{
+    margin-top: 100px;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+    background-color: #000000;
+}
+
+ul#menu-navegacao li {
+    display: inline;
+}
+
+ul#menu-navegacao a{
+    border: 1px solid white;
+    padding: 8px;
+    margin-right: 25px;
+    text-decoration: none;
+    font-size: 22px;
+    border-radius: 10px;
+       
+}
+
+ul#menu-navegacao a:link,ul#menu-navegacao a:visited{
+    color: white;
+}
+
+ul#menu-navegacao a:hover{
+    color: #22142b;
+    background:white;
+}
+
+/* Conteúdo */
+
+main{
+    margin: 0 auto;
+    width: 70%;
+    color: #22142b;
+}
+
+.conteudo{
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+h1{
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom:1px solid #dedee9;
+}
+
+p{
+    margin-top: 60px;
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 30px;
+}
+
+/* Rodape */
+
+footer{
+    background: url(../imagens/rodape.png) top center;
+    height: 100px;
+}
+
+#topo-pagina a, #topo-pagina a:link, #topo-pagina a:visited{
+    border: 1px solid white;
+    background: #22142b;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+#topo-pagina a:hover {
+    background: white;
+    color: #22142b;
+}
+
+img#seta{
+    width:50px;
+    margin-left: 30px;
+}
