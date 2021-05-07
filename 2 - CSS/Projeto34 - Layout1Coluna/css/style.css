@@ -80,7 +80,7 @@ p{
 /* Rodape */
 
 footer{
-    background: url(../imagens/rodape.png) top center;
+    background: #000000 url(../imagens/rodape.png) top center;
     height: 100px;
 }
 
