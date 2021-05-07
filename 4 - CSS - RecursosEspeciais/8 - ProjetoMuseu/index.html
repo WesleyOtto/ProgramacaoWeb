@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- EstiloCSS -->
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+
+        <!-- Normalize CSS-->
+        <link rel="stylesheet" type="text/css" href="style/normalize.css">
+
+        <!-- HTML5 shiv -->
+        <!--[if lt IE 9]>
+        	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+        <![endif]-->
+
+
+        <title>Document</title>
+    </head>
+
+    <body>
+        
+        <div id="container"> <!-- Inicio Container -->
+            
+            <header>
+
+                <div id="logo">
+                    <h1><a href="">Muse Nacional</a></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Exposições</a></li>
+                        <li><a href="#">Pesquisa</a></li>
+                        <li><a href="#">Acervo</a></li>
+                        <li><a href="#">Vídeos</a></li>
+                        <li><a href="#">Fotos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+
+                <div id="conteudo">
+                    <section id="capa">
+                        <img src="imagens/museu.png" alt="">
+                    </section>
+
+                    <section id="postagens">
+                        
+                        <article id="video">
+                            <h3>Conheça o Museu: </h3>
+                            <iframe width="310" height="170" src="https://www.youtube-nocookie.com/embed/RrNqehscjYA" title="YouTube video player"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </article>
+
+                        <article id="mapa">
+                            <h3>Mapa:Encontre o Museu</h3>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6689123786473!2d-46.629540885022486!3d-23.544407784691245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58fe6597b5ab%3A0xb5320d52c494e282!2sMuseu%20Catavento!5e0!3m2!1spt-BR!2sbr!4v1620419016871!5m2!1spt-BR!2sbr"
+                                width="310" height="170" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </article>
+
+                        <article id="exposicao">
+                            <h3>Exposições</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Os Assustadores Insetos</a>
+                                </li>
+                                <li>
+                                    <a href="#">Plantas do Brasil</a>
+                                </li>
+                                <li>
+                                    <a href="#">Arte com dinossauros</a>
+                                </li>
+                                <li>
+                                    <a href="#">Teresa Cristina: A impatriz Arqueóloga</a>
+                                </li>
+                                <li>
+                                    <a href="#">Preguiça gigante</a>
+                                </li>
+                                <li>
+                                    <a href="#">Preguiça gigante</a>
+                                </li>
+                                <li>
+                                    <a href="#">Preguiça gigante</a>
+                                </li>
+                                <li>
+                                    <a href="#">Preguiça gigante</a>
+                                </li>
+                                <li>
+                                    <a href="#">Preguiça gigante</a>
+                                </li>
+                                <li>
+                                    <a href="#"><strong>Veja todos (65)</strong></a>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article id="historia">
+                            <h3>200 anos de história</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis dui dolor, ut sagittis orci suscipit nec. Mauris eget
+                                metus quis lorem suscipit volutpat. Cras molestie elit id urna eleifend, pulvinar ultrices sem iaculis. Nunc vitae felis
+                                malesuada, varius orci sed, malesuada magna. Aenean tristique tincidunt tincidunt. Quisque ut est id ex sagittis
+                                sagittis eget vel lacus. Curabitur lectus ipsum, rhoncus eget dictum eget, ornare eget arcu. Nulla mollis tellus sit
+                                amet risus lobortis egestas. Integer auctor nunc nunc, sed ultrices turpis tempus in. Aliquam venenatis, sem feugiat
+                                facilisis egestas, magna dolor aliquam orci, eu malesuada ligula risus sit amet dolor. Vestibulum venenatis purus nunc,
+                                at imperdiet erat pretium ut.
+
+                            </p>
+                            <a href="">Leia Mais    </a>
+                        </article>
+
+                    </section>
+                </div>
+          
+                <aside>
+                    <section id="depoimento">
+                        <img src="imagens/depoimento.png" alt="">
+                    </section>
+
+                    <section id="visita">
+                        <h4>Faça uma visita</h4>
+                        <form action="">
+
+                            <fieldset>
+                                <legend>Seleciona uma data</legend>
+                                <label for="data">Data</label>
+                                <input class="campo" type="text" id="data" value="dd/mm/aaaa">
+
+                                <label for="qtd">Qtd.</label>
+                                <input class="campo" style="width:30px" type="text" id="qtd" value="1">
+                            </fieldset>
+
+                            <input class="botao" type="submit" value="Verificar Disponibilidade">
+
+                        </form>
+                    </section>
+
+                    <section id="galeria">
+                        <h4>Galeria de fotos</h4>
+                        <a href="">
+                            <img src="imagens/imagem1.jpg" height="93" width="93" alt="">
+                        </a>
+                        <a href="">
+                            <img src="imagens/imagem2.jpg" height="93" width="93" alt="">
+                        </a>
+                        <a href="">
+                            <img src="imagens/imagem3.jpg" height="93" width="93" alt="">
+                        </a>
+                        <a href="">
+                            <img src="imagens/imagem4.jpg" height="93" width="93" alt="">
+                        </a>
+                    </section>
+
+                </aside>
+
+                <footer class="limpar">
+                    <p>
+                        <a href="#">Exposições</a>
+                        <a href="#">Exposições</a>
+                        <a href="#">Pesquisa</a>
+                        <a href="#">Home</a>
+                        <a href="#">Acervo</a>
+                        <a href="#">Vídeos</a>
+                        <a href="#">Fotos</a>
+                        <a href="#">Contato</a>
+                    </p>
+
+                    <p>2019 <a href="">Museu Nacional - Todos direitos reservados</a></p>
+                </footer>
+                
+            </main>
+            
+            
+
+
+        </div> <!-- Fim Container -->
+
+    </body>
+</html>
