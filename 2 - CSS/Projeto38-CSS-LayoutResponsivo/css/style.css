@@ -1,0 +1,262 @@
+/* Aplicando Mobile First */
+/*  Limpando Formatações */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Formatações Gerais */
+body{
+    background: rgb(0,0,0);
+    font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+/* Formatação logo */
+ 
+ .imagem-logo{
+    text-align: center;
+}
+
+img.logo{
+    width: 50%;
+    height: 50%;
+} 
+
+
+/* Formatação Header */
+
+header{
+    background: black;
+    padding: 10px;
+}
+
+/* Formatação menu-principal */
+
+nav{
+    margin: 0 auto;
+    width: 90%;
+}
+nav ul{
+    list-style: none;
+}
+
+
+nav#menu-principal a:link{
+    background: black;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+}
+
+a:link, a:active, a:visited{
+    color: #af670a;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+nav#menu-principal a:hover{
+    background: white;
+}
+
+/* Formatação Conteúdo Principal */
+
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+h2{
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+article{
+    margin: 0 auto;
+    margin-bottom: 30px;
+ 
+}
+
+.conteudo-principal{
+    text-align: justify;
+    text-indent: 3em;
+}
+
+.imagem-conteudo{
+    text-align: center;
+}
+
+.imagem-conteudo img{
+    width: 80%;
+    margin-bottom: 40px;
+    border:  1px solid white;
+}
+
+/* Formatação Menu Direito */
+
+h1{
+    text-align: center;
+    display: block;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+
+h3{
+    text-align: center;
+    display: block;
+    border-bottom: 1px solid white;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}
+
+.imagem-direita{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.imagem-direita img{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.noticias{
+    margin: 0 auto;
+    border-bottom: 1px solid white ;
+    width: 60%;
+}
+
+/* Rodapé */
+
+footer{
+    border-top:2px solid gray;
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Media queries */
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+/* Header */
+
+    .imagem-logo{
+        text-align: center;
+    }
+    img.logo {
+       width: 20%;
+    }
+
+    nav{
+       
+    }
+
+    nav#menu-principal a:link {
+         float: left;
+         border-radius: 0;
+         padding-left: 20px;
+         padding-right: 20px;
+    }
+
+    /* Principal */
+    main{
+        clear: both;
+    }
+
+    .principal{
+        width: 50%;
+        float: left;
+    }
+
+    .imagem-conteudo img{
+        width: 40%;
+
+    }
+    
+    /* menu-esquerdo */
+
+     .menu-esquerdo{
+        clear: both;
+     }
+
+    /* Menu Direito */
+
+     .menu-direito{
+        width: 40%;
+        float: right;
+     }
+  
+  }
+
+  
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+    /* Header */
+
+    .imagem-logo{
+        text-align: center;
+    }
+    img.logo {
+       width: 20%;
+    }
+
+    nav{
+       
+    }
+
+    nav#menu-principal a:link {
+         float: left;
+         border-radius: 0;
+         padding-left: 20px;
+         padding-right: 20px;
+    }
+
+    /* Principal */
+    main{
+        clear: both;
+    }
+
+    .principal{
+        width: 50%;
+        float: left;
+    }
+
+    .imagem-conteudo img{
+        width: 40%;
+
+    }
+    
+    /* menu-esquerdo */
+
+     .menu-esquerdo{
+        margin-top: -35px;
+        margin-left: 50px;
+        width: 20%;
+        float: left;
+         
+     }
+
+    /* Menu Direito */
+
+     .menu-direito{
+        width: 20%;
+        float: right;
+     }
+
+  
+
+    footer{
+         clear: both;
+     }
+ }
+
