@@ -29,10 +29,10 @@
     <ul class="nav nav-tabs justify-content-center">
 
       <li class="nav-item">
-        <a href="http://" class="nav-link">Home</a>
+        <a href="http://" class="nav-link active">Home</a>
       </li>
       <li class="nav-item">
-        <a href="http://" class="nav-link active">Sobre</a>
+        <a href="http://" class="nav-link ">Sobre</a>
       </li>
       <li class="nav-item">
         <a href="http://" class="nav-link disabled">Serviços</a>
@@ -42,7 +42,9 @@
       </li>
      
     </ul>
-
+     
+    <br><br>
+    <!-- ********************************************************** -->
     <h2>Barra de navegação simples</h2>
     
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -67,16 +69,146 @@
       </ul>
     </nav>
 
+    <br><br>
+    <!-- ********************************************************** -->
     <h2>Barra de navegação com menu responsivo</h2>
     
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
       <!-- Logo -->
       <a href="http://" class="navbar-brand">Chalé Hotel</a>
 
       <!-- Menu Hamburguer -->
-      <button class="navbar-toggler">
+      <!-- Usamos o data-toggle para esconder o conteúdo
+           Usamos o data-target para mostrar o conteudo
+      -->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!-- Navegacao -->
+    
+      <div class="collapse navbar-collapse" id="nav-target">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="http://" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="http://" class="nav-link">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="http://" class="nav-link">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a href="http://" class="nav-link">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <br><br>
+    <!-- ********************************************************** -->
+
+    <h2>Barra de navegação com formulário</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+      <!-- Logo -->
+      <a href="http://" class="navbar-brand">Chalé Hotel</a>
+
+      <!-- Menu Hamburguer -->
+      <!-- Usamos o data-toggle para esconder o conteúdo
+              Usamos o data-target para mostrar o conteudo
+          -->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navegacao -->
+
+      <div class="collapse navbar-collapse" id="nav-target2">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="http://" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="http://" class="nav-link">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="http://" class="nav-link">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a href="http://" class="nav-link">Contato</a>
+          </li>
+        </ul>
+      
+        <form class="form-inline">
+          <input type="text" class="form-control" placeholder="Pesquisar...">
+          <br><br><br>
+          <button class="btn btn-outline-success ">OK</button>
+        </form>
+      </div>
+
+    </nav>
+
+    <br><br>
+    <!-- ********************************************************** -->
+    <h2>Barra de navegação com menu dropdown</h2>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    
+      <!-- Logo -->
+      <a href="http://" class="navbar-brand">Chalé Hotel</a>
+    
+      <!-- Menu Hamburguer -->
+      <!-- Usamos o data-toggle para esconder o conteúdo
+                  Usamos o data-target para mostrar o conteudo
+              -->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target3">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Navegacao -->
+    
+      <div class="collapse navbar-collapse" id="nav-target3">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="http://" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="http://" class="nav-link">Sobre</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="http://" class="nav-link dropdown-toggle" data-toggle="dropdown">Serviços</a>
+
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="http://">Serviço 1</a>
+              <a class="dropdown-item" href="http://">Serviço 2</a>
+              <a class="dropdown-item" href="http://">Serviço 3</a>
+            </div>
+
+          </li>
+
+          <li class="nav-item">
+            <a href="http://" class="nav-link">Contato</a>
+          </li>
+        </ul>
+   
+      </div>
+    
+    </nav>
+    <br><br>
+    <!-- ********************************************************** -->
+    <!--Cores
+    opções: bg-primary, bg-secondary, bg-success, bg-info,
+    bg-warning, bg-danger, bg-light, bg-dark
+    -->
+    <h2>Cores</h2>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+      <!-- Logo -->
+      <a href="http://" class="navbar-brand">Chalé Hotel</a>
+    
       <!-- Navegacao -->
     
       <ul class="navbar-nav ml-auto">
@@ -95,27 +227,42 @@
       </ul>
     </nav>
 
-    <h2>Barra de navegação com formulário</h2>
-    
 
-    
-    <h2>Barra de navegação com menu dropdown</h2>
-    
-    
-    <!--Cores
-    opções: bg-primary, bg-secondary, bg-success, bg-info,
-    bg-warning, bg-danger, bg-light, bg-dark
-    -->
-    <h2>Cores</h2>
-    
-
+      <br><br>
+    <!-- ********************************************************** -->
     <!--Alinhamentos
     opções: fixed-top, fixed-bottom, sticky
     -->
     <h2>Alinhamentos</h2>
+
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-primary">
+      <!-- Logo -->
+      <a href="http://" class="navbar-brand">Chalé Hotel</a>
     
+      <!-- Navegacao -->
+    
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="http://" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="http://" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a href="http://" class="nav-link">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a href="http://" class="nav-link">Contato</a>
+        </li>
+      </ul>
+    </nav>
 
     <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
 
 
