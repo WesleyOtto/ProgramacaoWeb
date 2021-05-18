@@ -1,0 +1,5 @@
+https://getbootstrap.com/docs/4.0/extend/icons/
+https://getbootstrap.com/docs/5.0/extend/icons/
+
+https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself
+https://github.com/iconic/open-iconic
