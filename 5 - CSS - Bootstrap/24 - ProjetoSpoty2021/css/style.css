@@ -1,0 +1,204 @@
+/* 
+    Projeto realizado para aprendizado HTML, CSS e BOOTStrap.
+
+    Desktop First
+
+*/
+
+/* Borda */
+
+.borda{
+    border: 1px solid red;
+}
+
+/* Estilos Personalizados */
+html, body, footer ,#spotpremium, #spot-free{
+    width: 100%;
+    /* Esconde as barras laterais */
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0px;
+}
+
+/* Cabeçalho*/
+
+header{
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 54px;
+}
+
+#nav-principal a:hover{
+    color: #1ed760;
+}
+
+#nav-principal a{
+    color:white;
+    padding: 28px 17px;
+}
+
+.divisor{
+    width: 1px;
+    height: 16px;
+    margin: auto 17px;
+    background: white;
+}
+
+/* Sessão Spot Premium */
+
+#spotpremium {
+    margin: 0 32px 0 0;
+    padding: 40px 0;
+    color: rgb(45, 70, 185);
+    background: #9bf0e1;
+    min-height: 480px;
+}
+
+.p-spot{
+    font-size: 14px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin: 15px 0 32px;
+    padding: 0 0 14px;
+}
+
+h1{
+    margin: 0;
+    font-size: 1.3em;
+}
+h2{
+    font-size: 1em;
+    letter-spacing: .1rem;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.btn-custom{
+    padding: 4px 48px;
+    font-size: inherit;
+    text-align: center;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+}
+
+#btn-azul{
+    color: white;
+    letter-spacing: .1rem;
+    background: #2D46B9;
+}
+
+#btn-azul:hover{
+      transform: scaleX(1.04);
+      color: white;
+}
+
+/* Spot free */
+
+#spot-free{
+    margin: 0 32px 0 0;
+    padding: 40px 0;
+    background-repeat: no-repeat;
+    background-color: rgb(41, 65, 171);
+    background-image: url(../imagens/imagem2.svg);
+    color: rgb(30, 215, 96);
+    min-height: 600px;
+}
+
+#btn-verde{
+    color: #2D46B9;
+    letter-spacing: .1rem;
+    background:  rgb(30, 215, 96);
+}
+
+#btn-verde:hover{
+      transform: scaleX(1.04);
+}
+
+/* Footer */
+
+footer{
+    padding: 80px 0 50px;
+}
+
+#insta:hover , #fb:hover , #twitter:hover {
+    color:rgb(30, 215, 96) ;
+}
+#insta , #fb , #twitter {
+    color:#fff;
+}
+
+footer a, a:visited, a:link, a:active{
+    font-weight: 400;
+    line-height: 2.5;
+    text-decoration: none;
+    color: white;
+}
+
+
+footer a:hover{
+    color:rgb(30, 215, 96) ;
+}
+
+h4{
+    color: #919496;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+#cop , #legal a,#legal a:visited,#legal a:link,#legal a:active{
+    color: #919496;
+    font-size: 12px;
+    padding: 1em 0;
+}
+
+#legal a:hover{
+    color:rgb(30, 215, 96) ;
+}
+
+#legal{
+    margin-top: 100px;
+}
+
+
+/* Responsividade */
+
+/* Telas Large Devices */
+@media (max-width: 992px){ 
+    #img-spot-premium{
+         margin-top: 40px;
+         width: 320px;
+    }
+    
+    .divisor{
+        width: 90px;
+        height: 3px;
+        margin: auto 17px;
+        background: white;
+    }
+ }
+
+@media (max-width: 768px){ 
+    .btn-custom{
+      display:block;
+    }
+
+     #spot-free{
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: 35% 35%;
+    }
+
+ }
+
+ 

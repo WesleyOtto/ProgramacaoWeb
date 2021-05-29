@@ -1,0 +1,253 @@
+<!-- 
+    Esse projeto apenas tem como finalidade estudar o Framework Bootstrap.
+    Imagens e informações retiradas do site : https://www.spotify.com/br/
+    28/05/2021
+ -->
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+
+        <!-- About WebSite -->
+        <title>Escutar muda tudo - Spotify</title>
+        <link rel="icon" href="imagens/favicon.png">
+        <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+        <meta name="description" content="Estudando a ferramenta Bootstrap">
+        <meta name="keywords" content="">
+        
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="../bootstrapV5.0/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Estilos Customizados-->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- JavaScript-->
+        <script src="../bootstrapV5.0/js/bootstrap.bundle.js"></script>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+
+        <header>  <!--Inicio Header-->
+
+            <nav class="navbar navbar-expand-lg bg-dark"> <!--Inicio Barra Navegação-->
+            
+                <!-- Logo -->
+                <div class="container">
+                    <a href="index.html">
+                        <img src="imagens/spot.svg" width="152" alt="">
+                    </a>
+            
+                <!-- Menu Responsivo -->
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-principal">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+            
+                <!-- Navegacao -->
+            
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="http://" class="nav-link fw-bold">Premium</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://" class="nav-link fw-bold">Suporte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://" class="nav-link fw-bold">Baixar</a>
+                        </li>
+                        <li class="nav-item divisor">|</li> <!--Divisor-->
+
+                        <li class="nav-item">
+                            <a href="http://" class="nav-link fw-bold">Inscrever-se</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://" class="nav-link fw-bold">Entrar</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav><!--Fim Barra Navegação-->
+        </header> <!--Fim Header-->
+        
+        <main>    <!--Conteudo Principal-->
+
+            <section id="spotpremium"> <!--Spoty Premium-->
+                
+                <div class="container">
+                    <div class="row">
+                    
+                        <div class="col-xl-7 text-center text-xl-start">
+                            <p class="p-spot" class="fw-bold">SPOTIFY PREMIUM</p>
+                    
+                            <h1 class="display-3 mb-5">Curta 3 meses de Premium grátis</h1>
+                    
+                            <h2 class="lh-base">Curta músicas sem anúncios, no modo offline e muito mais. Cancele quando quiser.</h2>
+                    
+                            <div class="mt-5">
+                                <a href="" class="btn btn-lg btn-custom fw-bold" id="btn-azul">
+                                    Ganhe 3 meses Grátis
+                                </a>
+                            </div>
+                          
+                        </div>
+                    
+                        <div class="col-xl-5 text-center">
+                            <img src="imagens/imagem1.png" id="img-spot-premium" width="400px" alt="">
+                        </div>
+                    
+                    </div>
+                </div>
+               
+
+            </section> <!-- Fim Spoty Premium-->
+
+            <section id="spot-free"> <!--Spoty Gratis-->
+                
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-xl-7 text-center text-xl-start">
+
+                            <div>
+                                <p class="p-spot">Spotify Free</p>
+                            </div>
+                            
+                            <div>
+                                <h1 class="display-3 text-xl-start text-lg-center mb-5">Escutar muda tudo</h1>
+                            </div>
+                            
+                            <div>
+                                <h2 class="lh-base text-xl-start text-lg-center">
+                                    Milhões de músicas e podcasts para explorar. E nem precisa de cartão de crédito.
+                                </h2>
+                            </div>
+                            
+                            <div class="mt-5">
+                                <a href="" class="btn btn-lg btn-custom fw-bold" id="btn-verde">
+                                    Baixe o Spotify Free
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!--Fim Spoty Gratis-->
+
+        </main> <!-- Fim Conteudo Principal-->
+
+        <footer class="bg-dark"> <!--Rodape-->
+        
+            <div class="container text-white">
+                <div class="row">
+                    
+                    <!-- Logo SVG -->
+                    <div class="col-md-2">
+                        <img src="imagens/spot.svg" width="142" alt="">
+                    </div>
+                    
+                    <!-- Empresas -->
+                    <div class="col-md-2">
+                        <h4 class="mt-3 mt-md-0">Empresa</h4>
+                        <ul class="navbar-nav mt-3 mt-md-0">
+                            <li><a href="">Sobre</a></li>
+                            <li><a href="">Empregos</a></li>
+                            <li><a href="">For the Records</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Comunidades -->
+                    <div class="col-md-2">
+                        <h4 class="mt-3 mt-md-0">Comunidades</h4>
+                        <ul class="navbar-nav mt-3 mt-md-0">
+                            <li><a href="">Para Artistas</a></li>
+                            <li><a href="">Desenvolvedores</a></li>
+                            <li><a href="">Publicidade</a></li>
+                            <li><a href="">Investidores</a></li>
+                            <li><a href="">Fornecedores</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Links úteis -->
+                    <div class="col-md-2">
+                        <h4 class="mt-3 mt-md-0">Links Uteis</h4>
+                        <ul class="navbar-nav mt-3 mt-md-0">
+                            <li><a href="">Suporte</a></li>
+                            <li><a href="">Player Web</a></li>
+                            <li><a href="">Aplicativel móve grátis</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Icones Redes Sociais -->
+                    <div class="col-md-4">
+
+                        <div class="container">
+                            <div class="row ms-5 mt-5">
+                                <div class="col-4">
+                                    <a href="">
+                                        <i class="fab fa-facebook-f fs-2" id="fb"></i>
+                                    </a>
+                                </div>
+                            
+                                <div class="col-4">
+                                    <a href="">
+                                        <i class="fab fa-instagram fs-2" id="insta"></i>
+                                    </a>
+                                </div>
+                            
+                                <div class="col-4">
+                                    <a href="">
+                                        <i class="fab fa-twitter fs-2" id="twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container" id="legal">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="navbar">
+                            <li>
+                                <a href="http://">Legal</a>
+                            </li>
+                            <li>
+                                <a href="http://">Centro de privacidade</a>
+                            </li>
+                            <li>
+                                <a href="http://">Política de privacidade</a>
+                            </li>
+                            <li>
+                                <a href="http://">Cookies</a>
+                            </li>
+                            <li>
+                                <a href="http://">Sobre anúncios</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-6 text-white text-end">
+                        <div id="cop">
+                            <p>© 2021 Spotify AB</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+               
+        </footer> <!-- Fim Rodape-->
+                
+    </body>
+
+</html>
