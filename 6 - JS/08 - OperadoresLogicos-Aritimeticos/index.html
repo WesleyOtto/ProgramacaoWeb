@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>Variáveis</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+    <script>
+
+        //Operadores Lógicos
+
+        /*
+            Operadores E (&&) 
+            Operadores ou (||) 
+            Negaçãp (!)
+
+        */
+
+        if ( (2 == 2) && (3 >= 1) && ('a' == 'b')) {
+            document.write("Verdadeiro")
+        } else {
+            document.write("falso")
+        }
+
+        //Operador Ternário
+
+        var nota = 5
+        var media = 7
+        var faltas = 2
+        var faltas_maximas = 5
+
+        var resultado = ( (nota>= media) && (faltas <= faltas_maximas) ) ? 'Aprovado' : "Reprovado"
+        document.write(resultado)
+
+        //Operadores artiméticos
+
+        /*
+            +
+            -
+            *
+            /
+            %   Módulo (resto de uma divisão)
+            ++  incremento  a++ --> a = a+1  pre/pos
+            --  decremento  a-- --> a = a-1  pre/pos
+
+            var teste = 10
+
+            +=  teste += 5 --> teste = teste+5
+            -=  teste -= 5 --> teste = teste-5
+            /=  teste /= 5 --> teste = teste/5
+            *=  teste *= 5 --> teste = teste*5
+            %=  teste %= 5 --> teste = teste%5
+    
+        */
+
+        /*
+            Existe a precedência de matemática !
+
+            // () --> aplicar precedência
+
+            1  multiplicação e divisão 
+            2  soma e subtração
+
+        */
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
