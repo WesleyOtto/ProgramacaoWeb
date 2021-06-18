@@ -21,7 +21,7 @@
             //Switch existe a necessidade de conversão para int/float
 
             var parametro = 2 
-
+            /*
             switch (parametro) {
                 case 1:
                     document.write("1")
@@ -35,6 +35,32 @@
                     document.write("Default")
                     break;
             }
+            */
+
+            var    tipofruta = prompt('Digite a fruta que você quer comprar')
+            switch (tipofruta) {
+                    case "Laranja":
+                        document.write("O quilo da laranja está R$0,59.<br>");
+                        break;
+                    case "Maçã":
+                        document.write("O quilo da maçã está R$0,32.<br>");
+                        break;
+                    case "Banana":
+                       document.write("O quilo da banana está R$0,48.<br>");
+                        break;
+                    case "Cereja":
+                        document.write("O quilo da cereja está R$3,00.<br>");
+                        break;
+                    case "Manga":
+                        document.write("O quilo da manga está R$0,56.<br>");
+                        break;
+                    case "Mamão":
+                        document.write("O quilo do mamão está R$2,23.<br>");
+                        break;
+                    default:
+                        document.write("Desculpe, não temos " + tipofruta + ".<br>");
+                }
+                
 
         </script>
 

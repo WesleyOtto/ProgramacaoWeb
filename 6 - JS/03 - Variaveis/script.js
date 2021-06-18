@@ -13,6 +13,11 @@ var numeroFracionario = 10.75
 var verdadeiro = true
 var falso = false
 
+// Constantes 
+
+const numero = 42 
+
+
 // Comandos legais para usar para debug
 
 //alert(numeroFracionado) //abrir um dialog

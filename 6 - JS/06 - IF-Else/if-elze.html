@@ -16,9 +16,10 @@
 
         <!-- Script -->
         <script>
-            
+            /*
             var media = 7
             var nota = prompt("Digite a nota do aluno")
+            */
 
             /*  
                 =     -> atribuição
@@ -33,11 +34,24 @@
                 O JS ele faz a "conversão de tipos quando comparamos, assim não é necessário converter"
             */
 
+            /*
             if (nota >= media) {
                 
                 document.write('Aprovado')
             } else {
                 document.write('Reprovado')
+            }
+            */
+
+            var preco = prompt("Digite a preço do produto")
+
+            if (preco < 0) {
+                alert('O preço do produto não pode ser negativo')
+            } else if(preco < 10)
+            {
+                alert('O preço do produto é menor do que 10')
+            }else{
+                alert('O preço do produto é maior do que 10')
             }
 
         </script>

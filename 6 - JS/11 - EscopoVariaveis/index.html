@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>swith</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+    <script>
+
+        //3 escopos : global, função e bloco
+         //Escopo de  Função  as variáveis são visíveis dentro da função em que são definidas e dentro de qualquer função independente do seu aninhamento
+        /*
+            O escopo de função em JavaScript significa que todas as variáveis declaradas dentro de uma função são visíveis por todo o corpo da função. Curiosamente, isso significa que as variáveis são visíveis mesmo antes de serem declaradas. Essa característica é informalmente conhecida no cenário JavaScript como Hoisting, o código JavaScript nesse cenário se comporta como se todas as declarações de variável em uma função fossem “içadas/elevadas” para o topo da função.
+
+        */
+        
+        //Escopo global
+        var global = 'Global'
+
+        //Escopo de bloco
+        if (true) {
+            var bloco = 'Bloco'
+            document.write(global + ' --- Variável escopo global dentro de um escopo do tipo bloco <br>')    
+        }
+
+        document.write(bloco + ' --- Variável escopo de bloco dentro do escopo global<br>')
+        
+
+        //Escopo função
+
+        function x () {
+            var funcao = 'funcao'
+            document.write(global + ' --- Variável escopo global dentro de um escopo do tipo Função <br>')
+            document.write(bloco + ' --- Variável escopo bloco dentro de um escopo do tipo Função <br>')
+            document.write(funcao + ' --- Variável escopo funcao dentro de um escopo Função<br>')
+        }
+        
+        x()
+        
+        //document.write(funcao + ' --- Variável escopo funcao dentro de um escopo global<br>')
+
+        document.write('<hr>')
+        //Apartir do ES6 - 2015 - Podemos utilizar let/ const para declara variáveis que só existem dentro de blocos
+
+        if (true) {
+            let variavel1 = 'Variável local'
+            const constante = 'Constante'
+             document.write(variavel1 + ' --- Variável Local ES6-2015<br>')
+             document.write(constante + ' ---  Constante Local ES6-2015<br')
+        }   
+            
+            document.write(variavel1 + ' --- Variável Local ES6-2015<br>')
+            document.write(constante + ' ---  Constante Local ES6-2015<br')
+            
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

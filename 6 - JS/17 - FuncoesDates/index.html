@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>swith</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+    <script>
+
+        var data = new Date()
+
+        document.write (data.getDate() + '/')
+        document.write ( (data.getMonth() + 1) + '/')
+        document.write (data.getFullYear() + '<hr>')
+
+        //Adicionar /remover dias
+
+        document.write(data.toString())
+        data.setDate(data.getDate() - 1)
+        document.write('<hr>')
+        document.write(data.toString() + '<br> <br><hr>')
+
+        //Adicioanar/remover meses
+        document.write(data.toString())
+        data.setMonth(data.getMonth() - 1)
+        document.write('<hr>')
+        document.write(data.toString() + '<br> <br><hr>')
+
+        //Adicioanar/remover ANOS
+        document.write(data.toString())
+        data.setFullYear(data.getFullYear() - 1)
+        document.write('<hr>')
+        document.write(data.toString())
+
+        document.write("<h1>Contas com datas </h1>")
+
+        //10/06/2021
+        var data1 = new Date(2021,5,10)
+
+        //20/07/2021
+        var data2 = new Date(2021,6,10)
+
+        document.write(data1.toString() + '<hr> <br>')
+        document.write(data2.toString() + '<hr> <br>')
+
+        //Converter datas para algo que possamos calcular (milisegundos)
+        document.write(data1.getTime() + '<hr> <br>')
+        document.write(data2.getTime() + '<hr> <br>')
+
+        //Ecnontrar a qtde de milissegundos entre data1 e data2
+        //Math.abs retorna o valor absoluta 
+         var ms_entre_datas = Math.abs(data2.getTime() - data1.getTime())
+         document.write( 'Diferença entre data1 e data2 =  ' + ms_entre_datas  + '<hr> <br>')
+
+         //1 dia - 24horas - 1 hora 60min
+         // 1 min = 60s
+         // 1s = 10000ms
+         //Então quantos milissegundo existem em um dia?
+         
+         var ms_umdia = 1 * 24 * 60 * 60 * 1000
+         document.write('1 dia tem = ' + ms_umdia + ' ms <hr> <br>')
+
+         document.write('A diferença entre as datas é de ' +  Math.ceil(ms_entre_datas/ms_umdia) + ' dias')
+         
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

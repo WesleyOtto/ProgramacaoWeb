@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>swith</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+    <script>
+
+        // A try instrução permite que você teste um bloco de código para erros.
+
+        // A catch declaração permite lidar com o erro.
+
+        // A throw instrução permite que você crie erros personalizados.
+
+        // A finally instrução permite que você execute o código, depois de tentar e capturar, independentemente do resultado.
+
+        // Quando acontece um erro no try ele para a execução do código imediatamente passa para o catch a excessão para o catch
+        // O tratamento é realizado no catch
+        //No bloco finally executa independente ou não, não é obrigatório
+
+        /*
+     
+        try {
+            //Rotina passivel de erro
+            //Quando é gerado um erro, é gerado uma excessão que é passado para o Catch
+            docusment.write("Oi")
+            
+        } catch (e) {
+            //No catch eu faço o tratamento do erro
+            document.write('Erro:' + e.message)
+            console.log(e)
+            
+        }
+        */
+    
+
+        // As vezes precisamos gerar um erro 
+
+        var numero; // Máximo 10
+
+        try {
+            
+            numero = prompt("Digite um valor")
+            if (numero > 10) {
+                /*
+                 Use a declaração throw para lançar uma exceção. Quando você lança uma exceção,
+                 você especifica a expressão contendo o valor a ser lançado:
+                 throw "Error2";   // tipo string
+                 throw 42;         // tipo numérico
+                 throw true;       // tipo booleano
+                 throw {toString: function() { return "Eu sou um objeto!"; } };
+
+                */
+                
+                throw new Error('Valor deve ser igual ou menor que 10')    
+            }
+
+            document.write('valor: ' + numero)
+        } catch (error) {
+            console.log(error)
+            document.write( 'O número: ' + numero + ' não é valido ')
+        }finally{
+            // Permite que você execute o código, depois de tentar e capturar, independentemente do resultado.
+            alert('Fim do tratamento')
+        }
+
+    </script>   
+
+</head>
+
+<body>
+
+</body>
+
+</html>

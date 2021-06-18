@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>swith</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+    <script>
+
+        /* função de call back         
+
+            São funções que se tornam parâmetros para outras funções
+
+        */ 
+
+        function exibirArtigo(id, callbackSucesso, callbackErro) {
+            //lógica:recuperar o id via requição http
+
+            if (true) {
+                callbackSucesso('Funções de callback em JS', 'Funções de callback são muito utilizadas')
+            }else{
+                callbackErro('Erro ao recuperar os dados')
+            }
+        }
+
+        //técnica de wrapper
+
+        var callbackSucesso = function(titulo, descricao){
+            document.write('<h1>' + titulo + '</h1>')
+            document.write('<hr>')
+            document.write('<p>' + descricao + '<p>')
+        }
+
+        var callbackErro = function(erro){
+            document.write('<p> <strong>Erro </strong>' + erro + '<p>')
+        }
+
+        //Perceba que eu não coloco (), pq não queremos que execute aqui, mas sim que passamos a função
+        exibirArtigo(1,callbackSucesso, callbackErro)
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

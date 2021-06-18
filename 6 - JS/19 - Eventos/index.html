@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+
+        <!-- About WebSite -->
+        <title>swith</title>
+        <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+        <meta name="copyright" content="© 2021 Wesley Otto" />
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Script -->
+        <script>
+
+            function acao() {
+                alert('Evento disparado')
+            }
+            
+            function acao2() {
+                alert('Elemento foi Clicado')
+            
+            }
+            function acao3() {
+                alert('O cursos do mouse deixou a area do elemento')
+            }
+
+            function tamanhoTela() {
+                 alert('Tamanho da tela mudou')
+            }
+            
+            function rodeiScroll(){
+              //  alert('Rodei o Scroll')
+            }
+        </script>
+
+    </head>
+
+    <body onresize="tamanhoTela()" onscroll="rodeiScroll()">
+
+        <!-- Tipos de eventos com mouse
+        
+             onclick        ---    acionado quando o elemento é clicado
+             ondblclick     ---    acionado quando o elemento é clicado duas vezes 
+             onmouseup      ---    acionado quando o click sobre o elemento é liberado
+             onmouseover    ---    acionado quando o cursos do mouse sobrepõe o elemento
+             onmouseout     ---    acionado quando o cursor da página sai da região da página ocupada pelo elemento
+        
+        -->
+
+        <h2>Eventos mouse</h2>
+        <h4>onclick</h4>
+        <div onclick="acao()" style="background: #ccc; height: 150px; width: 150px;"></div>
+        <br>
+        <h4>ondblclick</h4>
+        <div ondblclick="acao()" style="background: red; height: 150px; width: 150px;"></div>
+        <br>
+        <h4>onmouseup</h4>
+        <div onmouseup="acao()" style="background: blue; height: 150px; width: 150px;"></div>
+        <h4>onmouseover</h4>
+        <div onmouseover="acao()" style="background: green; height: 150px; width: 150px;"></div>
+        <h4>onmouseout</h4>
+        <div onmouseout="acao()" style="background: yellow; height: 150px; width: 150px;"></div>
+
+        <!-- Eventos em conjunto -->
+        <h4>onmouseout</h4>
+        <div onclick="acao2()" onmouseout="acao3()" style="background: pink; height: 150px; width: 150px;"></div>
+
+        <hr>
+        
+        <!-- Eventos com teclado
+            
+                onkeydown      - evento iniciado quando uma tecla é apertada 
+                onkeypress     - evento enquanto eu mantenho a tecla pressionada (quando for um caracter)
+                onkeyup        - evento iniciado quando uma tecla é despressionada 
+            -->
+        <h2>Eventos Teclado -</h2>
+        <h5>onkeyup</h5>
+        <input onkeyup="acao()" type="text">
+        <br>
+        <h5>onkeypress</h5>
+        <input onkeypress="acao()" type="text">
+        <br>
+        <h5>onkeydown</h5>
+        <input onkeydown="acao()" type="text">
+        
+        
+        <!-- Eventos de Janela
+        
+                onresize       -- acionado  quando a página é redimensionada, modificar o tamanho da aplicação e tomar alguma ação 
+                onscroll       -- acionado quando o scroll do mouse é acionado
+        
+             -->
+        
+        <hr>
+
+        <h2>Eventos de Teclado</h2>
+        
+        <!-- <h4>onresize</h4> -->
+        <!-- Evento especifico do body (olhe o body) -->
+        <br>
+        <!-- <h4>onscroll</h4> -->
+        <!-- Evento especifico do body (olhe o body) -->
+
+        <hr>
+        <h2>Eventos De Formulário</h2>
+        <!-- onfocus - é acionado quando o elemento recebe o foco do mouse(clicamos) 
+             onblur  - é acionado quando o elemento perde o foco 
+             onchange - é acionado quando o elemento é modificado
+        -->
+        <h4>onfocus/onblur</h4>
+        <input onfocus="console.log('focado')" onblur="console.log('desfocado')" type="text">
+
+        <h4>onchange</h4>
+        <select name="" id="" onchange="console.log('Estado foi modificado')">
+
+            <option value="">Selecione</option>
+            <option value="1">Op 1</option>
+            <option value="2">Op 2</option>
+
+        </select>
+    </body>
+
+
+
+</html>

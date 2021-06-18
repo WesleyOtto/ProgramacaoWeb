@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+
+        <!-- About WebSite -->
+        <title>Hello, world!</title>
+        <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+        <meta name="copyright" content="© 2021 Wesley Otto" />
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Script -->
+        
+       
+
+    </head>
+
+    <body>
+       
+         <script>
+
+             // NUmeros menores ou igual a 10
+             // Tratamento de Erros
+             try {
+                 var numero = prompt('Digite um valor')
+                 
+                if (numero > 10) {
+                    throw new Error('Valor deve ser igual ou menor que 10')
+                }
+
+                document.write('Valor: ' + numero)
+
+             } catch (error) {
+                alert('O número' + numero + 'não é válido')
+                console.log(error)
+             } finally{
+                 alert('Cadastro efetuado com sucesso')
+             }
+
+         </script>
+        
+        
+    </body>
+
+</html>
