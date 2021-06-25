@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+
+        <!-- About WebSite -->
+        <title>Hello, world!</title>
+        <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+        <meta name="copyright" content="© 2021 Wesley Otto" />
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+
+            .title{
+                color: blue;
+                font-size: 30px;
+            }
+
+        </style>
+
+        <!-- Script -->
+
+        <script>
+
+            //Adicionar Elementos
+            // https://www.w3schools.com/jsref/met_document_createelement.asp
+            
+            function insereH1() {
+                var titulo = document.createElement("h1")
+                titulo.innerHTML = 'Wesley Otto'
+                titulo.id = 'titulo'
+                titulo.className = 'title'
+                document.body.appendChild(titulo)
+            }
+            
+            function formulario() {
+                var formulario = document.createElement('select')
+                formulario.id = 'formulario'
+                document.body.appendChild(formulario)
+                
+            }
+
+            //AlterarElementos
+            function alterarElemento(idname) {
+                var alterar = document.getElementById(idname).innerHTML = 'Ola'
+            }
+
+            //Remover Elementos
+
+            function removeElementos(idname) {
+                var remover = document.getElementById(idname)
+                remover.remove()
+            }
+
+            //Recuperar
+              /* Selecionamento elementos da páginas
+
+                    document(API DOM)
+
+                    getElementById()
+                    getElementsByTagName()
+                    getElementsByClassName()
+                    getElementsByName()
+
+            */
+
+            function recuperar() {
+                console.log(document.getElementById('nome_usuario'))
+                console.log(document.getElementsByTagName('input'))
+                console.log(document.getElementsByClassName('campo_texto'))
+                console.log(document.getElementsByName('nome'))
+            }
+                    
+        </script>
+
+    </head>
+
+    <body>
+
+        <input 
+            type="text" 
+            placeholder="Digite seu nome" 
+            id="nome_usuario"
+            class="campo_texto" 
+            name="nome">
+
+        <script>
+            recuperar()
+            insereH1()
+            //formulario()
+            //alterarElemento('titulo')
+           // removeElementos('titulo')
+        </script>
+
+    </body>
+
+</html>

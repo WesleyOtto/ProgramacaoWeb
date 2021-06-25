@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>ArrowFunctions</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+
+    <script>
+        
+        // Arrow Function são uma nova forma de criar funções utilizando setas () => {}
+
+        //Possui 3 partes: 
+
+        /*
+            1  - Os parênteses (), que é por onde a função recebe os argumentos (assim como na function tradicional);
+            2  - A seta =>, responsável pelo nome “arrow” function;
+            3  - E as chaves {}, o bloco de código que representa o corpo da função.
+            https://dev.to/kabrau/arrow-functions-ou-funcoes-de-seta-3ic6
+
+        */
+
+        var hello = function () {
+            return 'Hello Word'
+        }
+
+        var hello2 = () => {
+            return 'Hello Word2'
+        }
+
+        var hello3 = () => "Hello Word3" 
+
+        document.write(hello() + '<br>')
+        document.write(hello2() + '<br>')
+        document.write(hello3() + '<br>' + '<hr>')
+
+        //Funções com Parâmetros
+
+        sum = function (a,b) {
+            return a+b
+        }
+
+        sum2 = (a,b) => {
+            return a+b
+        }
+
+        sum3 = (a,b) => a+b
+
+         document.write(sum(10,20) + '<br>')
+         document.write(sum2(10,30) + '<br>')
+         document.write(sum3(20,30) + '<br>')
+
+
+    </script>
+
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>

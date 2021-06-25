@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>swith</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+    <script>
+
+        /* função de call back         
+
+            São funções que se tornam parâmetros para outras funções
+
+        */
+
+        function greeting(name) {
+                alert('Hello ' + name);
+            }
+
+            function processUserInput(callback) {
+                var name = prompt('Please enter your name.');
+                callback(name);
+            }
+
+            processUserInput(greeting);
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

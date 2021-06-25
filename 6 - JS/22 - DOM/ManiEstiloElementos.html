@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+
+        <!-- About WebSite -->
+        <title>DOM</title>
+        <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+        <meta name="copyright" content="© 2021 Wesley Otto" />
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <!-- Código Css -->
+        <style type="text/css">
+
+            .caixa{
+                    border: 1px solid #000;
+                    width: 100px;
+                    height: 100px;
+            }
+
+        </style>
+
+        <!-- Script -->
+
+        <script>
+
+            function modificaEstilo(corDeFundo, largura, altura) {
+                
+                document.getElementById('quadrado').style.background = corDeFundo
+                document.getElementById('quadrado').style.width = largura
+                document.getElementById('quadrado').style.height = altura
+            }
+        
+        </script>
+
+    </head>
+
+    <body>
+        <!-- https://www.w3schools.com/jsref/dom_obj_style.asp -->
+        <h4>Manipulando Estilo</h4>
+        <button type="button" onclick="modificaEstilo('#FF0000', '200px', '200px')">Vermelho</button>
+        <button type="button" onclick="modificaEstilo('#00FF00','300px','300px')">Verde</button>
+        <button type="button" onclick="modificaEstilo('#0000FF','400px', '400px')">Azul</button>
+        
+        <hr>
+        <div class="caixa" id="quadrado"></div>
+
+    </body>
+
+</html>

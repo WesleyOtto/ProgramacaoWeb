@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+
+        <!-- About WebSite -->
+        <title>Hello, world!</title>
+        <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+        <meta name="copyright" content="© 2021 Wesley Otto" />
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Script -->
+
+        <script>
+            /*
+                { e } - delimita um objeto.
+                [ e ] - delimita um array.
+                : - separa chaves (atributos) de valores.
+                , - separa os atributos chave/valor.
+
+                A leitura simples de um JSON é que ele representa um 
+                objeto que tem atributos e cada atributo tem valores.
+
+                Os JSONs são estruturados em objetos e/ou arrays (ou listas). Os objetos são representados por chaves { }
+                 e os arrays são representados por colchetes [ ].
+
+                 Converter uma String (texto) para um objeto JSON;
+                 Converter um objeto JSON para String;
+                 Ler os dados dos atributos de um JSON;
+                 Inserir e alterar os dados dos atributos de um JSON;
+            */
+           
+
+            /*
+                1. Converter uma String (texto) para um objeto JSON;
+                var texto = '{"atributo1": "valor 1", "atributo2": 23}';
+                var objeto = JSON.parse(texto);
+                console.log(objeto);
+                
+                2. Converter um objeto JSON para String;
+                var objeto = {"atributo1": "valor 1", "atributo2": 23};
+                var texto = JSON.stringify(objeto);
+                console.log(texto);
+
+                3. Ler os dados dos atributos de um JSON;
+                var objeto = {"atributo1": "valor 1", "atributo2": 23};
+                console.log(objeto.atributo1);
+                console.log(objeto['atributo2']);
+
+                4. Inserir e alterar os dados dos atributos de um JSON;
+                var objeto = {"atributo1": "valor 1", "atributo2": 23};
+                objeto.atributo1 = 'outro valor'
+                objeto['atributo3'] = 'atributo que não existia'
+                console.log(objeto.atributo1);
+                console.log(objeto.atributo3);
+
+                Vantagens: 
+                Sintaxe simples, de fácil aprendizado e implementação;
+                Tamanho do arquivo bem menor em relação a outras “linguagens intermediárias”, tais como XML;
+                Facilidade de desenvolvimento e alto desempenho nas aplicações que o utilizam.
+
+            */
+
+            var frutas = `
+                {
+                    "fruta" : "Banana",
+                    "preço" :  15.50,
+                    "tipo"  : [
+                        "prata",
+                        "maça",
+                        "nanica",
+                        "da terra",
+                        "ouro"
+                    ],
+                    "origem" : "Brasil"
+                }`
+                
+                //String to JSON
+                frutas = JSON.parse(frutas)
+                console.log(frutas)
+                console.log("*-----------------------*")
+
+                //Ler Dados dos Atributos
+                console.log(frutas.origem)
+                console.log("*-----------------------*")
+
+                //Alterar Valores
+                frutas.fruta = 'morango'
+                //Inserir Valores
+                frutas['desconto'] = "10%"
+                console.log(frutas)
+                
+                console.log("*-----------------------*")
+
+                //JSON to String
+               frutas = JSON.stringify(frutas)
+               console.log(frutas)
+               
+               var end = `
+                   { 
+                       "endereço" : [
+                            {
+                                "rua" : "Polivalente",
+                                "Cidade" : "Americana-SP",
+                                "estado" : "SP"
+                            }
+                        ]
+                    } `
+
+                   
+        </script>
+
+    </head>
+
+    <body>
+
+        <h1>Hello, world!</h1>
+
+    </body>
+
+</html>

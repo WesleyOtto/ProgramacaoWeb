@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>DOM</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+
+    <script>
+
+        var lista_frutas = Array()
+        
+        lista_frutas[0] = 20
+        lista_frutas[1] = 1
+        lista_frutas[2] = 2
+        lista_frutas[4] = 10
+        lista_frutas[5] = 12
+        lista_frutas[6] = 100
+
+        console.log(lista_frutas.sort(ordenaNumeros))
+
+        /*
+        Basicamente, callback é um tipo de função que só é executada após o processamento de outra função. Na linguagem JavaScript, quando uma função é passada como um argumento de outra, ela é, então, chamada de callback.
+        
+
+        */
+        function ordenaNumeros(a,b){
+            return a - b
+
+            // < 0 = a ordenado antes de b 
+            // > 0 = b ordenado antes de a 
+            // == a ordem é mantida
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>

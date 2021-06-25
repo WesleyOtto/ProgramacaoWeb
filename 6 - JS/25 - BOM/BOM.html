@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+
+        <!-- About WebSite -->
+        <title>BOM</title>
+        <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+        <meta name="copyright" content="© 2021 Wesley Otto" />
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Script -->
+
+        <script>
+            //Windows https://www.w3schools.com/jsref/met_win_open.asp
+            
+            //window.open(URL, name, specs, replace)
+
+            var janela
+
+            function abrirPopUp(){
+              janela =  window.open('http://www.google.com','minha_janela', 'width=100, heigth100')
+            
+            }
+            function fecharPopUp(){
+                janela.close()
+            }
+
+
+            //Screem Podemos usar isso para utilizar na responsividade
+            var altura = window.screen.availHeight
+            var largura = window.screen.availWidth
+
+            function alturaNavegador() {
+                document.write('<Br>' + 'Altura do navegador: ' + altura)
+                document.write('<Br>' + 'Largura da navegador: ' + largura)
+            }
+            
+        </script>
+
+    </head>
+
+    <body>
+
+        <button onclick="abrirPopUp()">Abrir Janela</button>
+        <button onclick="fecharPopUp()">Fechar Janela</button>
+        <button onclick="window.print()">Imprimir Janela</button>
+        <button onclick="alturaNavegador()">Altura Navegador</button>
+
+
+    </body>
+
+</html>

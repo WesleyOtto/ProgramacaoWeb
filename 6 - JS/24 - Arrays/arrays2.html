@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>DOM</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+
+    <script>
+
+        //IncluirEExcluir conteúdo
+        
+        var lista_frutas = Array()
+        lista_frutas[0] = 'Banana'
+        lista_frutas[1] = 'Maça'
+        console.log(lista_frutas)
+
+        //Incluir Elemento no final do Array
+        lista_frutas.push('Final')
+
+        //Incluir Elemento no começo do Array
+        lista_frutas.unshift('Começo')
+        
+        console.log(lista_frutas)
+
+        //Excluir elemento no final do Array
+        lista_frutas.pop()
+        console.log(lista_frutas)
+
+        //Excluir elemento no começo do Array
+        lista_frutas.shift()
+        console.log(lista_frutas)
+
+        ///////////////////////////////////////////////////////
+
+        //Em arrays Multidimensionais
+        console.log('ArrayMult')
+
+         var lista_coisas = []
+
+        lista_coisas['frutas'] = Array()
+        lista_coisas['pessoas'] = []
+        
+        
+
+        //Incluir Elemento no final do Array
+        lista_coisas['frutas'].push('Banana')
+        lista_coisas['frutas'].push('Uva')
+        lista_coisas['frutas'].push('FINAL')
+                
+        //Incluir Elemento no começo do Array
+        lista_coisas['frutas'].unshift('Começo')
+        console.log(lista_coisas)
+
+        
+        //Excluir elemento no final do Array
+        //lista_coisas['frutas'].pop()
+        //console.log(lista_coisas)
+
+        //Excluir elemento no começo do Array
+        //lista_coisas['frutas'].shift()
+        //console.log(lista_coisas)
+
+       
+    </script>
+
+</head>
+
+<body>
+
+
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>DOM</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+
+    <script>
+
+        //Função Manipulando Valores no input
+
+        function distribuiCaracter() {
+
+            //Recuperar o valo digitado
+            var carater = document.getElementById('entrada').value
+
+            //Limpar o campo de digitação
+            document.getElementById('entrada').value = ''
+
+            //limpar espaços em branco nas extremidades da string
+            carater.trim()
+
+            console.log('caracter')
+            switch (carater) {
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                    //Adcionar o caracter no campo referente a número
+                    document.getElementById('apenas_numeros').value += carater
+                    break;
+            
+                default:
+                    //adicionar o caracter no campo referente a letras
+                    document.getElementById('apenas_letras').value += carater
+                    break;
+            }
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Manipulando valores de input -->
+    <h4>Manipulando valores de input</h4>
+    <!-- 
+
+            Verficar se o caracter digitado é uma letra, se for
+            vai para o campo 'letras' e se for um número vai 
+            para o capo 'numero'
+
+         -->
+
+    <input type="text" placeholder="Digite um caracter aqui" onkeyup="distribuiCaracter()" id="entrada">
+    <br>
+    <br>
+    <span>Letras</span>
+    <input type="text" disabled="disabled" id="apenas_letras">
+    <span>Número</span>
+    <input type="text" disabled="disabled" id="apenas_numeros">
+
+</body>
+
+</html>

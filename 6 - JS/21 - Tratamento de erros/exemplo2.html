@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>Tratamento</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+    <script>
+
+        //netflix
+
+     
+        var video = Array()
+
+        video[1] = Array
+        video[1]['nome'] = 'Fumetal Alquimist'
+        video[1]['categoria'] = 'Anime'
+
+        function getVideo(video) {
+            //video
+            //instrução http
+
+            try {
+                
+                document.write(video[0]['nome'])
+            } catch (error) {
+                tratarErro(error)
+                document.write( 'Agora sim podemos tratar esse error <br>')
+                throw new Error('Houve um Erro, estamos trabalhando nisso')
+            }finally{
+
+                document.write('Sempre Passa por Aqui (Try/Catch)')
+            }
+
+
+        }
+
+        function tratarErro(e) {
+            document.write('Erro:' + e + ' - ')
+        }
+        getVideo()
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

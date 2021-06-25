@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+
+        <!-- About WebSite -->
+        <title>BOM</title>
+        <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+        <meta name="copyright" content="© 2021 Wesley Otto" />
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Script -->
+
+        <script>
+            
+            //Location
+
+
+            function google() {
+                  //Criamos um redirecionamento
+                window.location.href = 'http://www.google.com'
+
+            }
+
+            //Timing
+
+            /*
+                setTimeout(<acao>, <tempo em ms>) --> Executa uma ação após um tempo informado
+                clearTimeout()
+
+                setInterval(<acao>, <tempo em ms>) --> Sempre executa a ação após o período informado
+                clearInterval
+            */
+            
+            //setTimeout("alert('Hello')", 1000);
+            //setTimeout(() => alert('Hello'), 1000);
+
+            function timeout() {
+                setTimeout(() => document.write('teste'), 2000)
+                //setTimeout(function() {document.write('teste')},2000)
+            }
+
+           function interval() {
+                let i = 5
+                setInterval(() => {
+                    document.write(i + '<br>') ;
+                    i--;
+
+                    if (i == 0) {
+                        
+                        window.location.reload()
+                    }
+                }
+                                
+                , 1000)
+                //setInterval(function() {document.write('teste')},2000)
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <button onclick="google()">Site Google</button>
+        <button onclick="timeout()">TimeOut</button>
+        <button onclick="interval()">interval</button>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>FOREach</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+
+    <script>
+
+        //Função pertenente ao objeto array Só funcionar com indices numericos
+
+        /*
+        var lista = ['Viviane', 'Lucas', 'Rosângela', 'Lucas', 'Fernanda']
+
+        console.log(lista)
+
+        lista.forEach(function(valor, indice, array){
+            //lógica
+            console.log('INDICE: ' + indice + ' | VAlOR: ' + valor)
+            
+            if (valor == 'Lucas') {
+                array[indice] = 'Um novo valor'
+            }
+            
+        });
+
+        console.log(lista)
+
+        */
+
+        var lista = ['Viviane', 'Lucas', 'Rosângela', 'Lucas', 'Fernanda']
+
+        var f = function(valor,indice) {
+            console.log(valor, indice)
+        }
+
+        lista.forEach(f)
+
+        
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

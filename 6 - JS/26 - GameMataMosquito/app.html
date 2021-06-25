@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+
+        <!-- About WebSite -->
+        <title>Hello, world!</title>
+        <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+        <meta name="copyright" content="© 2021 Wesley Otto" />
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Script -->
+
+        <script src="jogo.js"></script>
+
+    </head>
+
+    <body onresize="ajustaTamanhoPalcoJogo()">
+
+        <div class="painel">
+            <div class="vidas">
+                <img id="v1" src="imagens/coracao_cheio.png" alt="">
+                <img id="v2" src="imagens/coracao_cheio.png" alt="">
+                <img id="v3" src="imagens/coracao_cheio.png" alt="">
+                
+            </div>
+
+            <div class="cronometro">
+                Tempo Restante: <span id="cronometro"></span>
+            </div>
+        </div>
+        
+        <script>
+            document.getElementById('cronometro').innerHTML = tempo
+
+            var criaMosquito = setInterval(() => { posicaoRandomica() }, criaMosquitoTempo);
+        </script>
+    </body>
+
+</html>
