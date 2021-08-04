@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>swith</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+    <script>
+
+        let nome = 'Wesley'
+        console.log(`Oi ${nome}, tudo bem?`)
+
+        function calcular(x,y) {
+            return x*y
+        }
+
+        console.log(`A multilplicação de  8 *8 é : ${calcular(8,8)}`)
+
+        //Funções_parametro_default
+        function contarUmaHistória(personagem = 'Wesley', atividade = 'bola', nome_dono = 'Otto') {
+            document.write(`Era uma vez um cachorro chamado ${personagem}, ele adorava ${atividade}, seu dono chamava ${nome_dono} `)
+        }
+        
+        contarUmaHistória()
+        contarUmaHistória(undefined, 'enterrar ossos', 'Pedro')
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

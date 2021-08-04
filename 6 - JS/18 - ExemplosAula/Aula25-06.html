@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+
+        <!-- About WebSite -->
+        <title>Hello, world!</title>
+        <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+        <meta name="copyright" content="© 2021 Wesley Otto" />
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <!-- CSS -->
+
+        <style>
+
+            .caixa{
+               width: 150px;
+               height: 150px;
+               background: red;
+               margin-bottom: 50px;               
+            }
+
+        </style>
+
+        <!-- Script -->
+
+        <script>
+     
+           var end = `
+                   { 
+                       "endereco" : [
+                            {
+                                "rua" : "Polivalente",
+                                "Cidade" : "Americana-SP",
+                                "estado" : "SP"
+                            }
+                        ]
+                    } `
+            
+            console.log(end)
+            console.log('--------------------------')
+            end = JSON.parse(end)
+            console.log(end)
+            console.log('--------------------------')
+            console.log(end.endereco)
+        </script>
+
+    </head>
+
+    <body>
+
+        <!-- onfocus - 
+             onblur  - 
+             onchange 
+        -->
+       
+    </body>
+
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+
+        <!-- About WebSite -->
+        <title>Orientação Objeto</title>
+        <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+        <meta name="copyright" content="© 2021 Wesley Otto" />
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Script -->
+        
+
+        <script>
+
+            // Abstração // Objeto
+
+            class ContaBancaria{
+                
+                //Construtor
+                constructor(){
+                    this.agencia = 1075
+                    this.numeroConta = 565698
+                    this.saldo  = 50
+                    this.limite = 450
+                }
+
+                //Métodos
+                depositar(valorDeposito){
+                    this.saldo += valorDeposito
+                }
+
+                sacar(valorSaque){
+                    this.saldo -= valorSaque
+                }
+
+                consultarSaldo(){
+                    return this.saldo
+                }
+            }
+
+            //Crio um Obj
+            let x = new ContaBancaria()
+            let y = new ContaBancaria()
+
+            console.log(x.consultarSaldo())
+            x.depositar(450)
+            console.log(x.consultarSaldo())
+
+            x.sacar(200)
+            console.log(x.consultarSaldo())
+        </script>
+
+    </head>
+
+    <body>
+
+        <h1>OO</h1>
+
+</body>
+
+</html>
