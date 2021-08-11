@@ -21,16 +21,26 @@
             //um software de marcenaria
             //cadeira e sofá
 
-            class cadeira{
+            class Cadeira{
 
                 constructor(qtde_pernas, giratoria, cor){
                     this.qtde_pernas = qtde_pernas
                     this.giratoria = giratoria
                     this.cor = cor
                 }
+
+                girarCadeira(){
+                    if(this.giratoria == true){
+                        console.log('girou')
+                    }else{
+                        console.log('cadeira não é giratoria')
+                    }
+                }
             }
 
-           
+            
+            let novaCadeira = new Cadeira(4, false, 'azul')
+            novaCadeira.girarCadeira()
         </script>
 
     </head>

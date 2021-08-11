@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>Orientação Objeto</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+    <script>
+
+        // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes 
+        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields
+        //https://www.youtube.com/watch?v=Z11iEPRGOiw&ab_channel=Cod3rCursos
+
+        // Usamos o # para privar os atributos e métodos para serem privados
+
+        class Tv{
+            #relacaoCanais
+            #canaltAtivo
+            #volume
+
+            constructor(){
+                this.#relacaoCanais = Array(2,4,5,7,10)
+                this.#canaltAtivo   = 5 
+                this.#volume = 5
+            }
+
+            //getters 
+            get canaltAtivo(){
+                return this.#canaltAtivo
+            }
+          
+            //Setters
+            set canaltAtivo(canal){
+                //
+                if (this.#relacaoCanais.indexOf(canal) !== -1){
+                    this.#canaltAtivo = canal
+                }
+                                
+            }
+        }
+
+        let teve = new Tv()
+        teve.canaltAtivo = 10
+        console.log(teve.canaltAtivo)
+    </script>
+
+</head>
+
+<body>
+
+    <h1>OO - Encapsulamento</h1>
+
+</body>
+
+</html>
