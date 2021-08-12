@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>Orientação Objeto</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+    <script>
+
+        let assinatura = {
+            idCliente: 1000,
+            descricao: 'Acesso a Internet',
+            status(){
+                console.log('Ativo')
+            }
+            
+        }
+        console.log(assinatura.descricao)
+
+        let y = assinatura
+        y.descricao = 'Internet+TV+Telefone'
+
+        console.log(assinatura.descricao)
+        console.log(y.descricao)
+ 
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>OO - Objeto Literals - Unico</h1>
+
+</body>
+
+</html>

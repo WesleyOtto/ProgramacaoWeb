@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+
+        <!-- About WebSite -->
+        <title>Orientação Objeto</title>
+        <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+        <meta name="copyright" content="© 2021 Wesley Otto" />
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Script -->
+        <script>
+
+            let nome = 'Wesley Otto'
+            let idade = 26
+            let sexo  = 'Masculino'
+            let profissao = 'Professor'
+
+            let obj = {
+                nome:nome,
+                idade:idade,
+                sexo:sexo,
+                profissao:profissao,
+                exibirResumo: function () {
+                    console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} e ${this.profissao}`)
+                }
+            }
+
+            console.log(obj)
+            obj.exibirResumo()
+
+            //Melhorias ES6
+
+            let obj2 = {
+                nome,
+                idade,
+                sexo,
+                profissao,
+                exibirResumo() {
+                    console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} e ${this.profissao}`)
+                }
+            }
+
+             //Modificando obj literal
+             obj2.nome = "Otto Garcia"
+
+             //Adicionando atributos
+             obj2.teste = 'teste'
+
+             //Adicionando funcoes
+             obj2.dizerOi = ()=> console.log('Olá, tudo bem?')
+             
+             console.log(obj2)
+             obj.exibirResumo()
+             obj2.dizerOi()
+        </script>
+
+    </head>
+
+    <body>
+
+        <h1>OO - Objeto Literals - Melhoria</h1>
+
+    </body>
+
+</html>

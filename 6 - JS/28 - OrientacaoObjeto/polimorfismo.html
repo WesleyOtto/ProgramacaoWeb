@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+
+        <!-- About WebSite -->
+        <title>Orientação Objeto</title>
+        <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+        <meta name="copyright" content="© 2021 Wesley Otto" />
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Script -->
+        <script>
+
+            class Animal {
+
+                constructor(cor, tamanho, peso) {
+                    this.cor = cor
+                    this.tamanho = tamanho
+                    this.peso = peso
+                }
+
+                dormir() {
+                    console.log('Dormir')
+                }
+
+            }
+
+            class Passaro extends Animal {
+
+                constructor(bico, cor, tamanho, peso) {
+                    super(cor, tamanho, peso)
+                    this.bico = bico
+                }
+
+                voar() {
+                    console.log('Voar')
+                }
+            }
+
+            class Papagaio extends Passaro {
+
+                constructor(sabeFalar, cor, tamanho, peso) {
+                    super('Médio', cor, tamanho, peso)
+                    this.sabeFalar = sabeFalar
+                }
+
+                falar() {
+                    console.log("Falar")
+                }
+
+            }
+        
+            class Avestruz extends Passaro {
+
+                constructor() {
+                   super("Grande", 'Branco e Preto', 250, 15000)
+                }
+
+                
+                enterrarCabeça(){
+                    console.log("Enterrar Cabeça")
+                }
+
+                //Polimorfismo --> Substitui o método Pai
+                voar(){
+                    console.log("não sabe voar")
+                }
+
+            }
+
+            let papa = new Papagaio(true, 'verde', 35, 350)
+            console.log(papa)
+            papa.voar()
+
+            let aves = new Avestruz()
+            console.log(aves)
+            aves.voar()
+        </script>
+
+    </head>
+
+    <body>
+
+        <h1>OO - Polimorfismo</h1>
+
+    </body>
+
+</html>

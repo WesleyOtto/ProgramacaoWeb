@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>Orientação Objeto</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+    <script>
+
+        //funcoes construtoras
+        let Carro = function () {
+            this.cor = 'Amarelo'
+            this.modelo = "Ford"
+            this.velocidadeAtual = 0
+            this.velocidadeMax = 110
+
+            //Metodos
+            this.acelerar = function (){
+                let velocidade = this.getVelocidadeAtual() + 10
+                this.setVelocidadeAtual(velocidade)
+
+            }
+
+            this.getVelocidadeAtual = function  (){
+                return this.velocidadeAtual
+            }
+
+            this.setVelocidadeAtual = function (velocidadeAtual){
+                this.velocidadeAtual = velocidadeAtual
+            }
+
+        }
+
+        let carro = new Carro()
+
+        console.log(`A Velocidade atual é: ${carro.getVelocidadeAtual()}`)
+        carro.acelerar()
+        console.log(`A Velocidade atual é: ${carro.getVelocidadeAtual()}`)
+    </script>
+
+</head>
+
+<body>
+
+    <h1>OO - Funcao Construtora</h1>
+
+</body>
+
+</html>
