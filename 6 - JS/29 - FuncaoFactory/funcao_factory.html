@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>Orientação Objeto</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+    <script>
+
+        //Obj Literal
+        let Bicicleta1 = {
+            cor: `Branca`,
+            marcha: `única`,
+            aro: 12,
+
+            //metodo
+            pedalar(){console.log(`Método Padalar executado`)}
+        }
+
+       //Obj Literal
+        let Bicicleta2 = {
+            cor: `Vermelha`,
+            marcha: `18`,
+            aro: 26,
+
+            //metodo
+            pedalar() { console.log(`Método Padalar executado`) }
+        }
+
+        console.log(Bicicleta1)
+        console.log(Bicicleta2)
+
+        //Função Factory --> Não preciso ficar repetindo código
+        let BicicletaFactory = function ( cor, marcha, aro) {
+            return {
+                cor: cor,
+                marcha: marcha,
+                aro: aro,
+
+                //metodo
+                pedalar() { console.log(`Método Padalar executado`) }
+            }
+        }
+
+        let Bicicleta3 = BicicletaFactory(`Verde`, 12, 20)
+        console.log(Bicicleta3)
+        let Bicicleta4 = BicicletaFactory(`Azul`, 12, 20)
+       console.log(Bicicleta4)
+       Bicicleta4.cor = 'Troquei'
+       console.log(Bicicleta4)
+       console.log(Bicicleta3)
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Função Factory </h1>
+
+</body>
+
+</html>

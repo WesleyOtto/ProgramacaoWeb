@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>Orientação Objeto</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+    <script>
+
+        /*
+        let arr = [10,20,30,40]
+
+        function teste([a,b,,c, d=100]) {
+            console.log(a,b,c, d)
+        }
+
+        teste(arr)
+
+        */
+
+        let obj = {
+            a: 10,
+            b: 20,
+            c: 30,
+            d: 40
+        }
+
+        function teste({a:x,b:y}) {
+            console.log(x,y)
+        }
+
+        teste(obj)
+
+    </script>
+
+</head>
+
+<body>
+    <!-- Todos os objetos em JS descendem de Object  -->
+    <h1>Destructuring 3 </h1>
+
+</body>
+
+</html>

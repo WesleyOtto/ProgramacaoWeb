@@ -1,0 +1,53 @@
+        
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>Orientação Objeto</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+    <script>
+
+        //Contexto Spread ...
+
+        //String
+        let tituloArtigo = 'Como utilizar o opderador rest/spread'
+        
+        console.log(tituloArtigo)
+        console.log(...tituloArtigo)
+        console.log([...tituloArtigo])
+
+        //arrays
+        let listaCursos1 = ['Node Js e Mongo DB', 'ES6 Typscript e Angular 4' ]
+        let listaCursos2 = ['Multiplataforma Android/IOS' ,'Introdução ao GNU/Linux']
+        let listasCursosCompleto = ['Web Completo', 'Androd Completo', ...listaCursos1, ...listaCursos2]
+
+        console.log(listasCursosCompleto)
+
+        //Spread in Objeto
+
+        let pessoa = {nome: 'João', idade:27}
+        let clone =  {endereco:'Rua Abc', ...pessoa}
+        console.log(clone)
+
+    </script>
+
+</head>
+
+<body>
+    <!-- Todos os objetos em JS descendem de Object  -->
+    <h1>Spread</h1>
+
+</body>
+
+</html>

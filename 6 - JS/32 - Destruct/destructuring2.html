@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>Orientação Objeto</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+    <script>
+       
+       // token
+       //array []
+       //obj literal {}
+
+       let produto = {
+           descricao: 'Notebook',
+           preco:1800,
+
+            //Composição é um 
+              // tem um
+
+           detalhes: {
+               fabricante:'abc',
+               modelo:'xyz'
+           }
+       }
+
+       //Podemos atribuir a uma variável dessa forma descricao: d
+
+       let {descricao:d, preco:p = 1500, desconto:de = '5,00'} = produto
+
+       console.log(d, p, de)
+
+       //Extraindo fabreicante e modelo
+       let {detalhes:{fabricante:f, modelo:m}} = produto
+       console.log(f, m)
+
+    </script>
+
+</head>
+
+<body>
+    <!-- Todos os objetos em JS descendem de Object  -->
+    <h1>Destructuring 2 </h1>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- About WebSite -->
+    <title>Orientação Objeto</title>
+    <meta name="author" content="Wesley Otto Garcia Utsunomiya">
+    <meta name="copyright" content="© 2021 Wesley Otto" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script -->
+    <script>
+
+        //funcoes construtoras
+        let Carro = function () {
+
+            //atributo privado nas funções construtoras
+            var velocidadeMax = 110
+            var quilometrosRodados = 0
+
+            this.cor = 'Amarelo'
+            this.modelo = "Ford"
+            this.velocidadeAtual = 0
+            //this.velocidadeMax = 110
+
+            //Metodos
+            this.acelerar = function () {
+                let velocidade = (this.getVelocidadeAtual() + 50)
+                
+                if (velocidade > velocidadeMax) {
+                    velocidade = velocidadeMax
+                }
+
+                this.setVelocidadeAtual(velocidade)
+                setQuilometrosRodados (0.07)
+                console.log(quilometrosRodados)
+
+            }
+
+            this.getVelocidadeAtual = function () {
+                return this.velocidadeAtual
+            }
+
+            this.setVelocidadeAtual = function (velocidadeAtual) {
+                this.velocidadeAtual = velocidadeAtual
+            }
+
+            //Método privado de uma função construtora
+            var setQuilometrosRodados = function (q) {
+                quilometrosRodados += q
+            }
+
+        }
+
+        let carro = new Carro()
+        console.log(carro.velocidadeAtual)
+        carro.acelerar()
+        console.log(carro.velocidadeAtual)
+        carro.acelerar()
+        // console.log(carro.velocidadeAtual)
+        // carro.acelerar()
+        // console.log(carro.velocidadeAtual)
+        // carro.acelerar()
+        // console.log(carro.velocidadeAtual)
+        // carro.acelerar()
+        // //carro.velocidadeMax = 200
+        // console.log(carro.velocidadeAtual)
+        // carro.acelerar()
+        // console.log(carro.velocidadeAtual)
+        // carro.acelerar()
+        // console.log(carro.velocidadeAtual)
+        
+    </script>
+
+</head>
+
+<body>
+
+    <h1>OO - Funcao Construtora </h1>
+
+</body>
+
+</html>
