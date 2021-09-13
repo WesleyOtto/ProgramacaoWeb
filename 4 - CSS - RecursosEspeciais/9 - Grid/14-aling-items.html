@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            /* 
+                Alinha o conteúdo dos itens do grid em relação ao eixo y (vertical). Alinha em relação a célula.
+
+                align-items: start
+                // Alinha os itens ao início.
+                align-items: end
+                // Alinha os itens ao final.
+                align-items: center
+                // Centraliza o conteúdo.
+                align-items: stretch
+                // Estica os itens.
+
+            */
+            /* Grid */
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 100px);
+            }
+
+            .start {
+                align-items: start;
+            }
+
+            .end {
+                align-items: end;
+            }
+
+            .center {
+                align-items: center;
+            }
+
+            .stretch {
+                align-items: stretch;
+            }
+
+            .item-2, .item-3 {
+                grid-row: span 2;
+            }
+
+            .item-5 {
+                grid-column: span 2;
+            }
+
+            /* Grid Item */
+            .item {
+                margin: 5px;
+                background: tomato;
+                text-align: center;
+                font-size: 1.5em;
+            }
+
+            .grid {
+                max-width: 400px;
+                margin: 0 auto;
+                border: 1px solid #ccc;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 1.25em;
+                font-weight: normal;
+            }
+
+            body {
+                font-family: monospace;
+                color: #333;
+                padding-bottom: 60px;
+                margin: 0px;
+            }
+
+            body > div {
+                padding: 40px 0;
+            }
+
+            body > div:nth-of-type(even) {
+                background: rgba(0,0,0,.03);
+            }
+
+            body > div > img {
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>align-items: start;</h1>
+            <section class="grid start">
+                <div class="item">Teste 1</div>
+                <div class="item">Ae 2</div>
+                <div class="item">Isso 3</div>
+                <div class="item">Ab 4</div>
+                <div class="item">Aqui 5</div>
+                <div class="item">Ela 6</div>
+            </section>
+        </div>
+        
+        <div>
+            <h1>align-items: end;</h1>
+            <section class="grid end">
+                <div class="item">Teste 1</div>
+                <div class="item">Ae 2</div>
+                <div class="item">Isso 3</div>
+                <div class="item">Ab 4</div>
+                <div class="item">Aqui 5</div>
+                <div class="item">Ela 6</div>
+            </section>
+        </div>
+        
+        <div>
+            <h1>align-items: center;</h1>
+            <section class="grid center">
+                <div class="item">Teste 1</div>
+                <div class="item">Ae 2</div>
+                <div class="item">Isso 3</div>
+                <div class="item">Ab 4</div>
+                <div class="item">Aqui 5</div>
+                <div class="item">Ela 6</div>
+            </section>
+        </div>
+        
+        <div>
+            <h1>align-items: stretch;</h1>
+            <section class="grid stretch">
+                <div class="item">Teste 1</div>
+                <div class="item">Ae 2</div>
+                <div class="item">Isso 3</div>
+                <div class="item">Ab 4</div>
+                <div class="item">Aqui 5</div>
+                <div class="item">Ela 6</div>
+            </section>
+        </div>
+    </body>
+</html>
